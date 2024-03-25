@@ -1,11 +1,9 @@
-<script lang="ts">
-    import Slider from "./Slider.svelte";
-    import { input_store } from "./input_store";
+<script>
+    import MousePosition from "./mousePosition.svelte";
 </script>
 
 <div class="container">
-    <Slider text="Slider 1" bind:value={$input_store.slider1} />
-    <Slider text="Slider 2" bind:value={$input_store.slider2} />
+    <MousePosition></MousePosition>
 </div>
 
 <style>
