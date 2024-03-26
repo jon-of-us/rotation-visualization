@@ -5,7 +5,6 @@
     import * as s from "../settings/settings";
 
     let render: Render;
-    let test;
     function rotate3D(v: Vector, angle: number, axis: Vector): Vector {
         const c = Math.cos(angle);
         const s = Math.sin(angle);
