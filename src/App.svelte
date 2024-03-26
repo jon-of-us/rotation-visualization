@@ -6,6 +6,7 @@
     import Dot from "./visual/Dot.svelte";
     import Circle from "./visual/Circle.svelte";
     import LineToMiddle from "./visual/LineToMiddle.svelte";
+    import Donut from "./input/Donut.svelte";
 
     let width: number;
     let height: number;
@@ -28,5 +29,6 @@
             x={$input_store.mousePosition.x}
             y={$input_store.mousePosition.y}
         />
+        <Donut />
     </Canvas>
 </div>
