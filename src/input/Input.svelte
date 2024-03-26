@@ -1,9 +1,11 @@
 <script>
+    import TraceButton from "./TraceButton.svelte";
     import MousePosition from "./mousePosition.svelte";
 </script>
 
 <div class="container">
     <MousePosition></MousePosition>
+    <TraceButton></TraceButton>
 </div>
 
 <style>
