@@ -13,7 +13,6 @@
             event.clientY - $input_store.screenMiddle.y,
             event.clientX - $input_store.screenMiddle.x
         );
-        console.log($input_store.angle);
     }
 
     onMount(() => {
