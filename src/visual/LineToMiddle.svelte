@@ -6,7 +6,7 @@
     export let y: number;
     let render: Render;
     $: render = ({ context, width, height }) => {
-        context.strokeStyle = "white";
+        context.strokeStyle = "rgba(255, 255, 255, 0.5)";
         context.beginPath();
         context.moveTo(
             $input_store.screenMiddle.x,

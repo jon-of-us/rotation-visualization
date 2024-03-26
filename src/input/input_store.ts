@@ -5,6 +5,6 @@ export const input_store = writable({
     slider2: 0,
     mousePosition: { x: 0, y: 0 },
     screenMiddle: { x: 0, y: 0 },
-    radius: 0,
-    angle: 0,
+    mouseRadius: 0,
+    mouseAngle: 0,
 });

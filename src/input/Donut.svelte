@@ -35,11 +35,11 @@
         return new Vector([result.at(0, 0), result.at(1, 0), result.at(2, 0)]);
     }
     $: mouseVector = new Vector([
-        Math.cos($input_store.angle),
-        Math.sin($input_store.angle),
+        Math.cos($input_store.mouseAngle),
+        Math.sin($input_store.mouseAngle),
         0,
     ]);
-    $: turnAngle = ($input_store.radius / s.radius) * Math.PI;
+    $: turnAngle = ($input_store.mouseRadius / s.radius) * Math.PI;
 
     $: render = ({ context, width, height }) => {
         const rootVector = new Vector([width / 2, height / 2, 0]);
