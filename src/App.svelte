@@ -4,16 +4,27 @@
     import Canvas from "./canvas/Canvas.svelte";
     import RandomDot from "./visual/RandomDot.svelte";
     import Dot from "./visual/Dot.svelte";
+    import Circle from "./visual/Circle.svelte";
+    import LineToMiddle from "./visual/LineToMiddle.svelte";
+
+    let width: number;
+    let height: number;
+    $: $input_store.screenMiddle = { x: width / 2, y: height / 2 };
 </script>
 
 <div id="app">
     <Input />
-    <Canvas>
+    <Canvas bind:width bind:height>
         <!-- {#each { length: $input_store.slider1 } as _, i}
             <RandomDot />
         {/each}
         <RandomDot /> -->
         <Dot
+            x={$input_store.mousePosition.x}
+            y={$input_store.mousePosition.y}
+        />
+        <Circle />
+        <LineToMiddle
             x={$input_store.mousePosition.x}
             y={$input_store.mousePosition.y}
         />
